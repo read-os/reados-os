@@ -1,0 +1,34 @@
+# ReadOS — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Web framework
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# EPUB parsing
+ebooklib>=0.18
+
+# PDF rendering and metadata
+PyMuPDF>=1.23.0
+
+# HTML parsing (for Anna's Archive scraping)
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# HTTP client
+requests>=2.31.0
+
+# Image processing (optional, for cover thumbnails)
+Pillow>=10.0.0
+
+# YAML config parsing
+PyYAML>=6.0.1
+
+# Password hashing utilities (stdlib PBKDF2 used — no extra dep)
+# JWT / session tokens — using stdlib secrets
+
+# Optional: Gunicorn WSGI server for production
+gunicorn>=21.2.0
+
+# Optional: watchdog for auto library scan
+# watchdog>=3.0.0

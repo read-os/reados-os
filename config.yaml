@@ -1,0 +1,70 @@
+# ReadOS Configuration
+# Edit this file to configure your ReadOS installation.
+# All values can also be set via environment variables (see config.py).
+
+# Local storage paths
+books_dir: "./books"
+db_path: "./reados.db"
+cache_dir: "./cache"
+covers_dir: "./cache/covers"
+temp_dir: "./tmp"
+
+# Security — CHANGE THIS before deploying
+secret_key: "REPLACE_WITH_RANDOM_SECRET_KEY"
+
+# Session expiry (hours)
+jwt_expiry_hours: 72
+
+# Max upload size in megabytes
+max_upload_mb: 100
+
+# UI defaults
+default_language: "en"   # en | pt | es | fr | de | it | ja | zh
+default_theme: "light"   # light | dark | sepia
+default_font_size: 18
+
+# Cloud sync configuration
+cloud:
+  enabled: false
+  # provider: local | rest | firebase | supabase
+  provider: "local"
+  base_url: ""
+  api_key: ""
+  # Firebase (if provider: firebase)
+  # firebase_project_id: ""
+  # Supabase (if provider: supabase)
+  # supabase_url: ""
+
+# Anna's Archive mirror sources
+# Add or replace URLs here if a domain is banned.
+# No code changes needed — just update this list and restart.
+# You can also update sources live from Settings UI or PUT /api/archive/sources.
+annas_archive:
+  sources:
+    - "https://annas-archive.gl"
+    - "https://annas-archive.pk"
+    - "https://annas-archive.gd"
+  timeout_seconds: 15
+  max_results: 50
+  # API key for fast, reliable downloads (highly recommended).
+  # Obtain by donating at https://annas-archive.org/donate
+  # then copy your key from https://annas-archive.org/account
+  # Can also be set via env var: ANNAS_ARCHIVE_KEY=your_key
+  api_key: ""
+
+# Google Drive import (optional)
+google_drive:
+  client_id: ""
+  client_secret: ""
+  redirect_uri: "http://localhost:8080/api/import/gdrive/callback"
+
+# Email import (optional — requires inbound email webhook)
+email_import:
+  enabled: false
+  domain: "import.reados.example.com"
+
+# Logging
+logging:
+  level: "INFO"   # DEBUG | INFO | WARNING | ERROR
+  max_bytes: 5242880
+  backup_count: 3
