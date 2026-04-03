@@ -3,6 +3,8 @@
 **An open-source e-reader system designed for freedom.
 No ads. No lock-in. No ecosystem control.                                                                                                                   Runs on Kobo, Kindle, and more.**
 
+---
+
 ReadOS is a full-featured, self-hosted e-reader application. It runs a lightweight Python web server on the device and exposes a polished reading interface through the device's browser.
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-blue)
