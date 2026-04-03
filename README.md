@@ -1,8 +1,12 @@
 # ReadOS 📚
 
-**Production-grade e-reader software for Kobo and compatible e-readers.**
+**An open-source e-reader system designed for freedom.
+No ads. No lock-in. No ecosystem control.                                                                                                                   Runs on Kobo, Kindle, and more.**
 
 ReadOS is a full-featured, self-hosted e-reader application. It runs a lightweight Python web server on the device and exposes a polished reading interface through the device's browser.
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active-blue)
+![Platform](https://img.shields.io/badge/platform-Kobo%20%7C%20Kindle%20%7C%20Boox-orange)
 
 ---
 
@@ -19,7 +23,19 @@ ReadOS is a full-featured, self-hosted e-reader application. It runs a lightweig
 - 🔖 **Bookmarks & Highlights** — per-book, synced to cloud
 
 ---
+## Why ReadOS?
 
+Most e-readers are locked ecosystems:
+- Ads
+- DRM
+- Limited control
+
+ReadOS changes that.
+
+You own your device.
+You control your library.
+
+---
 ## Quick Start
 
 ### 1. Install
@@ -279,3 +295,14 @@ ReadOS is designed to be maintained by volunteers. The most impactful areas:
 - **New cloud backends** — Add backends in `cloud.py`
 - **New languages** — Add locale files in `locales/`
 - **Kobo compatibility** — Test and report issues on specific Kobo models
+
+---
+  
+## Join the project
+
+ReadOS is just getting started.
+
+If you believe in open devices and free reading:
+- ⭐ Star the repo
+- 🛠️ Contribute
+- 🐛 Report bugs
