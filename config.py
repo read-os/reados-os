@@ -15,6 +15,11 @@ logger = logging.getLogger("ReadOS.Config")
 class Config:
     VERSION = "1.0.0"
 
+    # GitHub repository — used for update checks
+    GITHUB_REPO = "read-os/reados-os"
+    GITHUB_URL  = "https://github.com/read-os/reados-os"
+    GITHUB_API  = "https://api.github.com/repos/read-os/reados-os"
+
     DEFAULTS = {
         "books_dir": "./books",
         "db_path": "./reados.db",
